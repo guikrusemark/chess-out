@@ -4,7 +4,7 @@
 
 ### Integrantes
 - [Guilherme Krusemark](https://github.com/guikrusemark)
-- [Lucas Augusto] (https://github.com/minipatch)
+- [Lucas Augusto](https://github.com/minipatch)
 - 
 - 
 - 
