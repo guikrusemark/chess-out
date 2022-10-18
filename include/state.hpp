@@ -9,6 +9,9 @@
  * 
  */
 
+#include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
+
 #ifndef STATE_H
 #define STATE_H
 
@@ -16,6 +19,15 @@
  * @brief Classe responsavel pelo estados do jogo 
  * 
  */
+
+class state{
+    protected:
+      
+
+    public:
+
+
+};
 
 
 
