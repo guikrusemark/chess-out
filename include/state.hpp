@@ -15,8 +15,12 @@
 
 #include <iostream>
 #include <vector>
-#include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
+#include <stack>
+
+#include "SFML/Window.hpp"
+#include "SFML/Audio.hpp"
+#include "SFML/Graphics.hpp"
+#include "SFML/System.hpp"
 
 /**
  * @brief Classe responsavel pelo estados do jogo 
@@ -24,17 +28,13 @@
  */
 
 class State{
-    protected:
-        //std::stack<State *> *state;
+    private:
+
         sf::RenderWindow *window;
-        std::vector<sf::Texture> textures;
-        bool quit_state = false; 
-
-        sf::Vector2i mouse_position_screen;
-        sf::Vector2i mouse_position_window;
-        sf::Vector2i mouse_position_view;
-
+    
     public:
+        State();
+
         /**
          * @brief Constroi um novo estado de jogo       
          * 
@@ -48,10 +48,23 @@ class State{
          */
         virtual ~State();
 
-
+        /**
+         * @brief Função virtual que vai sobreescrever estado do jogo
+         * 
+         */
         virtual void update (const float &delta_time);
 
+        /**
+         * @brief uma função virtual que renderiza a tela do jogo
+         * 
+         */
+        virtual void render()=0;
 
+        /**
+         * @brief uma função virtual que atualiza o estado principal do jogo
+         * 
+         */
+        virtual void update()=0;
 };
 
 

@@ -9,8 +9,13 @@
  * 
  */
 
-#ifndef game
-#define game
+#ifndef GAME_H
+#define GAME_H
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
 
 #include "SFML/Graphics.hpp"
 #include "SFML/Window.hpp"
@@ -18,6 +23,7 @@
 #include "SFML/System.hpp"
 #include "SFML/Network.hpp"
 
+#include "include/state.hpp"
 
 /**
  * @brief classe responsavel pelo jogo
@@ -30,7 +36,14 @@ class Game{
         sf::RenderWindow *window; 
         sf::Event sf_event;
 
-        void initWindow();
+        sf::Clock dt_clock;
+        float dt;
+
+        bool vertical_sync_enable = false;
+        unsigned framerate_limit = 30;
+
+        std::string  title = "chess";
+        std::stack<State* > states;
     public:
         /**
          * @brief Construtor da classe game 
@@ -68,6 +81,13 @@ class Game{
          * 
          */
         void run();
+
+
+        /**
+         * @brief uma função que atualiza o tempo
+         * 
+         */
+        void update_dt();
 
 };
 
