@@ -1,8 +1,8 @@
 #ifndef _GAME_H_
 #define _GAME_H_
 
-#include "player.h"
-#include "board.h"
+#include "match-component/player.h"
+#include "chess-component/board.h"
 
 class Game {
 private:

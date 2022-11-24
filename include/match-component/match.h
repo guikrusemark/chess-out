@@ -8,6 +8,7 @@ private:
     unsigned int time;
     Player &playerWhite;
     Player &playerBlack;
+    
 public:
     Match();
     ~Match();
