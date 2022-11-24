@@ -1,5 +1,5 @@
-#ifndef PIECES
-#define PIECES
+#ifndef PIECES_H
+#define PIECES_H
 
 #include <iostream>
 #include <string>
@@ -12,15 +12,15 @@ class Pieces{
         
         bool m_white;
     public:
-        Pieces(bool white,bool m_dead);
+        Pieces(bool isWhite,bool m_dead);
 
         virtual void moves() = 0;
 
-        virtual bool Dead() = 0;
+        virtual bool dead() = 0;
 
         virtual void starting_pos() = 0;
 
-        bool getWhite();
+        bool getPieceWhite();
 };
 
 

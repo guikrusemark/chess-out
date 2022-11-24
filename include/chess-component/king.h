@@ -1,7 +1,7 @@
 #ifndef KINGH_H
 #define KINGH_H
 
-#include "pieces.hpp"
+#include "pieces.h"
 
 
 class King : public Pieces{
@@ -10,13 +10,13 @@ class King : public Pieces{
 
 
     public:
-        King(bool check,bool white,bool dead);
+        King(bool check,bool isWhite,bool dead);
 
-        bool Getcheck();
+        bool getCheck();
 
         void moves() override;
 
-        bool Dead() override;
+        bool dead() override;
 
         void starting_pos() override;
 
