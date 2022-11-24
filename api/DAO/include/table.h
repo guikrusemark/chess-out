@@ -21,35 +21,38 @@
 #include <sstream>
 #include <fstream>
 
-class Table {
-    private:
-        std::vector<std::vector<std::string>> m_dataMatrix;
-        std::string m_name;
-        std::string m_filePath;
-        std::vector<std::string> m_header;
-        bool m_hasHeader {false};
-        bool m_isSynced {true};
+namespace db {
 
-    public:
-        Table();
-        Table(std::string name, std::string filePath);
-        Table(std::string name, std::string filePath, bool hasHeader);
+    class Table {
+        private:
+            std::vector<std::vector<std::string>> m_dataMatrix;
+            std::string m_name;
+            std::string m_filePath;
+            std::vector<std::string> m_header;
+            bool m_hasHeader{false};
+            bool m_isSynced{true};
 
-        /**
-        * @brief Adds a row to the table.
-        * @param row The row to be added. 
-        */
-        void addDataRow(std::string row);
+        public:
+            Table();
+            Table(std::string name, std::string filePath);
+            Table(std::string name, std::string filePath, bool hasHeader);
 
-        unsigned int rowCount();
-        unsigned int columnCount();
+            /**
+             * @brief Adds a row to the table.
+             * @param row The row to be added.
+             */
+            void addDataRow(std::string row);
 
-        std::string getName();
-        std::string getFilePath();
-        bool hasHeader();
-        std::vector<std::string> getHeader();
-        bool isSynced();
-        void syncFile();
-};
+            unsigned int rowCount();
+            unsigned int columnCount();
+
+            std::string getName();
+            std::string getFilePath();
+            bool hasHeader();
+            std::vector<std::string> getHeader();
+            bool isSynced();
+            void syncFile();
+    };
+}; // namespace db
 
 #endif // TABLE_H

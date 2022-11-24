@@ -4,7 +4,15 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/include",
-                "${workspaceFolder}/include/**"
+                "${workspaceFolder}/include/**",
+                "${workspaceFolder}/api/DAO/include",
+                "${workspaceFolder}/api/DAO/include/**",
+                "${workspaceFolder}/api/presenter-CLI/include",
+                "${workspaceFolder}/api/presenter-CLI/include/**",
+                "${workspaceFolder}/api/presenter-SFML/include",
+                "${workspaceFolder}/api/presenter-SFML/include/**",
+                "${workspaceFolder}/api/presenter-SFML/engine/include",
+                "${workspaceFolder}/api/presenter-SFML/engine/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

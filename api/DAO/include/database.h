@@ -16,29 +16,33 @@
 #include <map>
 #include <fstream>
 
-class Database {
-    private:
-        std::map<std::string, Table> m_tables;
-        
-        std::string m_rootPath {"./db/"};
-        std::string m_usualExtension {"csv"};
-        bool m_connected {false};
+namespace db {
 
-    public:
-        Database();
+    class Database {
+        private:
+            std::map<std::string, Table> m_tables;
 
-        void setRootPath(const std::string path);
-        std::string getRootPath();
-        void setUsualExtension(const std::string extension);
-        std::string getUsualExtension();
+            std::string m_rootPath{"./db/"};
+            std::string m_usualExtension{"csv"};
+            bool m_connected{false};
 
-        void connect();
-        void connect(const std::string path);
-        void connect(const std::string path, const std::string extension);
-        void disconnect();
-        bool isConnected();
+        public:
+            Database();
 
-        void loadTable(const std::string nameOfTable);
-};
+            void setRootPath(const std::string path);
+            std::string getRootPath();
+            void setUsualExtension(const std::string extension);
+            std::string getUsualExtension();
+
+            void connect();
+            void connect(const std::string path);
+            void connect(const std::string path, const std::string extension);
+            void disconnect();
+            bool isConnected();
+
+            void loadTable(const std::string nameOfTable);
+        };
+}; // namespace db
+
 
 #endif // DATABASE_H
