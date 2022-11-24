@@ -3,14 +3,18 @@
 Knight::Knight(bool isWhite,bool dead): Pieces(isWhite,dead){}
 
 
+char Knight::getPeca(){
+    return m_peca;
+}
+
 void Knight::moves()
 {
 
 }
 
-bool Knight::dead()
+bool Knight::getDead()
 {
-
+    return m_dead;
 }
 
 void starting_pos()

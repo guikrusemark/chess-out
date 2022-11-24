@@ -7,14 +7,18 @@
 
 class Pawn : public Pieces{
     private:
-        
+        bool m_dead = false;
+
+        char m_peca = 'P';
 
     public:
         Pawn(bool isWhite,bool dead);
 
+        char getPeca();
+
         void moves() override;
 
-        bool dead() override;
+        bool getDead() override;
 
         void starting_pos() override;
 

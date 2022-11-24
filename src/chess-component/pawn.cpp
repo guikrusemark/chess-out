@@ -2,6 +2,10 @@
 
 Pawn::Pawn(bool isWhite,bool dead): Pieces(isWhite,dead){}
 
+char Pawn::getPeca()
+{
+    return m_peca;
+}
 
 
 void Pawn::moves()
@@ -10,9 +14,9 @@ void Pawn::moves()
 }
 
 
-bool Pawn::dead()
+bool Pawn::getDead()
 {
-
+    return m_dead;
 }
 
 

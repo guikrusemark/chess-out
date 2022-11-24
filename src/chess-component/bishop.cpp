@@ -7,10 +7,17 @@ void Bishop::moves()
 
 }
 
-bool Bishop::dead()
-{
-
+char Bishop::getPeca(){
+    return m_peca;
 }
+
+bool Bishop::getDead()
+{
+    return m_dead;
+}
+
+
+
 
 void Bishop::starting_pos()
 {

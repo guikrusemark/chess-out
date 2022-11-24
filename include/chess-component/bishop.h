@@ -10,18 +10,21 @@
 
 class Bishop : public Pieces{
     private:
-        
+        bool m_dead = false;
+
+        char m_peca = 'B';
     public:
 
     Bishop(bool Iswhite,bool dead);
 
+    char getPeca();
+
     void moves() override;
 
-    bool dead() override;
+    bool getDead() override;
 
     void starting_pos() override;
 
-    bool getWhite();
 };
 
 

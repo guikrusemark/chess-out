@@ -7,9 +7,15 @@ void Queen::moves()
 
 }
 
-bool Queen::dead()
+char Queen::getPeca()
 {
+    return m_peca;
+}
 
+
+bool Queen::getDead()
+{
+    return m_dead;
 }
 
 void Queen::starting_pos()

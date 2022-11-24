@@ -16,7 +16,7 @@ class Pieces{
 
         virtual void moves() = 0;
 
-        virtual bool dead() = 0;
+        virtual bool getDead() = 0;
 
         virtual void starting_pos() = 0;
 

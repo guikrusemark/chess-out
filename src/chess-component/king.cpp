@@ -6,19 +6,27 @@ King::King(bool check,bool isWhite,bool dead) :
     m_check=check;
 }
 
+
+char King::getPeca()
+{
+    return m_peca; 
+}
+
 bool King::getCheck()
 {
-    return m_check;
+    if(getDead()==true){
+        return m_check;
+    }
 }
 
 void King::moves()
 {
-
+    
 }
 
-bool King::dead()
+bool King::getDead()
 {
-    
+    return m_dead;
 }
 
 

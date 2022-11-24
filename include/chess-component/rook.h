@@ -6,14 +6,17 @@
 
 class Rook : public Pieces{
     private:
+        char m_peca = 'R';
 
-
+        bool m_dead = false;
     public:
         Rook(bool isWhite,bool dead);
 
+        char getPeca();
+
         void moves() override;
 
-        bool dead() override;
+        bool getDead() override;
         
         void starting_pos() override;
 }; 

@@ -4,15 +4,21 @@
 Rook::Rook(bool isWhite,bool dead): Pieces(isWhite,dead){}
 
 
+char Rook::getPeca(){
+    return m_peca;
+}
+
+
+
 void Rook::moves()
 {
 
 }
 
 
-bool Rook::dead()
+bool Rook::getDead()
 {
-
+    return m_dead;
 }
 
 
