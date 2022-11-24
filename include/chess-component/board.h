@@ -3,7 +3,7 @@
 
 #include <map>
 
-#include "piece.h"
+#include "chess-component/piece.h"
 
 class Board {
 private:
