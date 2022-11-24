@@ -1,11 +1,8 @@
 // #include "definitions.hpp"
 // #include "engine/include/game/game.hpp"
-// #include <iostream>
 #include <SFML/Graphics.hpp>
 
 int main() {
-    // pte::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Demo");
-    // return 0;
 
     sf::RenderWindow window(sf::VideoMode(800, 800), "ChessTable");
     window.setPosition(sf::Vector2i(0, 0));
@@ -28,5 +25,6 @@ int main() {
         window.draw(shape2);
         window.display();
     }
+    
     return 0;
 }

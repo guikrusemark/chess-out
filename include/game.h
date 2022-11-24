@@ -2,12 +2,14 @@
 #define _GAME_H_
 
 #include "player.h"
+#include "board.h"
 
 class Game {
 private:
-    unsigned int time;
-    Player &playerWhite;
-    Player &playerBlack;
+    unsigned int m_time;
+    Player &m_playerWhite;
+    Player &m_playerBlack;
+    Board &m_board;
 
 public:
     Game();
