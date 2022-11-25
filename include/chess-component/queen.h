@@ -4,22 +4,22 @@
 #include <iostream>
 #include "pieces.h"
 
-class Queen : public Pieces{
+class Queen : public Piece{
     private:
-        bool m_dead = false;
+        bool isDead = false;
 
-        char m_peca = 'Q';
+        char m_piece = 'Q';
 
     public:
-        Queen(bool isWhite,bool dead);
+        Queen(bool isWhite);
 
-        char getPeca();
+        char getPiece();
 
-        void moves() override;
+        void move() override;
 
-        bool getDead() override;
+        bool hasDead() override;
 
-        void starting_pos() override;
+        void startingPos() override;
 
 };
 

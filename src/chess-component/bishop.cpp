@@ -1,25 +1,25 @@
 #include "include/chess-component/bishop.h"
 
-Bishop::Bishop(bool white,bool dead): Pieces(white,dead){}
+Bishop::Bishop(bool white): Piece(white){}
 
-void Bishop::moves()
+void Bishop::move()
 {
 
 }
 
-char Bishop::getPeca(){
-    return m_peca;
+char Bishop::getPiece(){
+    return m_piece;
 }
 
-bool Bishop::getDead()
+bool Bishop::hasDead()
 {
-    return m_dead;
+    return isDead;
 }
 
 
 
 
-void Bishop::starting_pos()
+void Bishop::startingPos()
 {
 
 }

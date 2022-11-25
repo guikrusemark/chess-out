@@ -4,27 +4,26 @@
 #include "pieces.h"
 
 
-class King : public Pieces{
+class King : public Piece{
     private:
         bool m_check = false;
 
-        bool m_dead = false;
+        bool isDead = false;
 
-        char m_peca = 'K';
+        char m_piece = 'K';
 
     public:
-        King(bool check,bool isWhite,bool dead);
+        King(bool check,bool isWhite);
 
-        char getPeca();
+        char getPiece();
 
         bool getCheck();
 
-        void moves() override;
+        void move() override;
 
-        bool getDead() override;
+        bool hasDead() override;
 
-        void starting_pos() override;
-
+        void startingPos() override;
 }; 
 
 

@@ -1,36 +1,38 @@
 #include "include/chess-component/king.h"
 
-King::King(bool check,bool isWhite,bool dead) : 
-    Pieces(isWhite,dead){
+King::King(bool check,bool isWhite) : 
+    Piece(isWhite){
     
     m_check=check;
 }
 
 
-char King::getPeca()
+char King::getPiece()
 {
-    return m_peca; 
+    return m_piece; 
 }
 
 bool King::getCheck()
 {
-    if(getDead()==true){
+    if(hasDead()==true){
         return m_check;
     }
 }
 
-void King::moves()
+void King::move()
 {
     
 }
 
-bool King::getDead()
+bool King::hasDead()
 {
-    return m_dead;
+    return isDead;
 }
 
 
-void King::starting_pos()
+void King::startingPos()
 {
     
 }
+
+

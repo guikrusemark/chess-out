@@ -1,27 +1,27 @@
 #include "include/chess-component/pawn.h"
 
-Pawn::Pawn(bool isWhite,bool dead): Pieces(isWhite,dead){}
+Pawn::Pawn(bool isWhite): Piece(isWhite){}
 
-char Pawn::getPeca()
+char Pawn::getPiece()
 {
-    return m_peca;
+    return m_piece;
 }
 
 
-void Pawn::moves()
+void Pawn::move()
 {
     
 }
 
 
-bool Pawn::getDead()
+bool Pawn::hasDead()
 {
-    return m_dead;
+    return isDead;
 }
 
 
 
-void starting_pos()
+void Pawn::startingPos()
 {
 
 }

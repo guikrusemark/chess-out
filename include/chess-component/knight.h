@@ -4,21 +4,21 @@
 #include <iostream>
 #include "pieces.h"
 
-class Knight : public Pieces{
+class Knight : public Piece{
     private:
         bool m_dead = false;
 
-        char m_peca = 'Kni';
+        char m_piece = 'n';
     public:
-        Knight(bool isWhite,bool dead);
+        Knight(bool isWhite);
 
-        char getPeca();
+        char getPiece();
 
-        void moves() override;
+        void move() override;
 
-        bool getDead() override;
+        bool hasDead() override;
 
-        void starting_pos() override;
+        void startingPos() override;
 
 };
 

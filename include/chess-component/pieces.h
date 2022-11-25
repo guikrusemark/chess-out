@@ -6,21 +6,24 @@
 
 
 
-class Pieces{
+class Piece{
     private:
-        bool m_dead = false;        
+        bool isDead = false;        
         
         bool m_white;
     public:
-        Pieces(bool isWhite,bool m_dead);
+        Piece(bool isWhite);
 
-        virtual void moves() = 0;
 
-        virtual bool getDead() = 0;
 
-        virtual void starting_pos() = 0;
+        virtual void move() = 0;
 
-        bool getPieceWhite();
+        virtual bool hasDead();
+
+        virtual void startingPos() = 0;
+
+        char getPiece();
+
 };
 
 

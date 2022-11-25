@@ -1,28 +1,28 @@
 #include "include/chess-component/rook.h"
 
 
-Rook::Rook(bool isWhite,bool dead): Pieces(isWhite,dead){}
+Rook::Rook(bool isWhite): Piece(isWhite){}
 
 
-char Rook::getPeca(){
-    return m_peca;
+char Rook::getPiece(){
+    return m_piece;
 }
 
 
 
-void Rook::moves()
+void Rook::move()
 {
 
 }
 
 
-bool Rook::getDead()
+bool Rook::hasDead()
 {
-    return m_dead;
+    return isDead;
 }
 
 
-void Rook::starting_pos()
+void Rook::startingPos()
 {
 
 }

@@ -4,21 +4,21 @@
 #include <iostream>
 #include "pieces.h"
 
-class Rook : public Pieces{
+class Rook : public Piece{
     private:
-        char m_peca = 'R';
+        char m_piece = 'R';
 
-        bool m_dead = false;
+        bool isDead = false;
     public:
-        Rook(bool isWhite,bool dead);
+        Rook(bool isWhite);
 
-        char getPeca();
+        char getPiece();
 
-        void moves() override;
+        void move() override;
 
-        bool getDead() override;
+        bool hasDead() override;
         
-        void starting_pos() override;
+        void startingPos() override;
 }; 
 
 

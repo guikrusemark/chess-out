@@ -1,24 +1,24 @@
 #include "include/chess-component/queen.h"
 
-Queen::Queen(bool isWhite,bool dead): Pieces(isWhite,dead){}
+Queen::Queen(bool isWhite): Piece(isWhite){}
 
-void Queen::moves()
+void Queen::move()
 {
 
 }
 
-char Queen::getPeca()
+char Queen::getPiece()
 {
-    return m_peca;
+    return m_piece;
 }
 
 
-bool Queen::getDead()
+bool Queen::hasDead()
 {
-    return m_dead;
+    return isDead;
 }
 
-void Queen::starting_pos()
+void Queen::startingPos()
 {
 
 }

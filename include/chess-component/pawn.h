@@ -5,22 +5,22 @@
 #include "pieces.h"
 
 
-class Pawn : public Pieces{
+class Pawn : public Piece{
     private:
-        bool m_dead = false;
+        bool isDead = false;
 
-        char m_peca = 'P';
+        char m_piece = 'P';
 
     public:
-        Pawn(bool isWhite,bool dead);
+        Pawn(bool isWhite);
 
-        char getPeca();
+        char getPiece();
 
-        void moves() override;
+        void move() override;
 
-        bool getDead() override;
+        bool hasDead() override;
 
-        void starting_pos() override;
+        void startingPos() override;
 
 };
 

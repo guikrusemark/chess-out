@@ -1,18 +1,18 @@
 #include "include/chess-component/knight.h"
 
-Knight::Knight(bool isWhite,bool dead): Pieces(isWhite,dead){}
+Knight::Knight(bool isWhite): Piece(isWhite){}
 
 
-char Knight::getPeca(){
-    return m_peca;
+char Knight::getPiece(){
+    return m_piece;
 }
 
-void Knight::moves()
+void Knight::move()
 {
 
 }
 
-bool Knight::getDead()
+bool Knight::hasDead()
 {
     return m_dead;
 }

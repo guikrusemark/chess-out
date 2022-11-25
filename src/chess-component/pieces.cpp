@@ -1,15 +1,12 @@
 #include "include/chess-component/pieces.h"
 
-Pieces::Pieces(bool isWhite,bool dead)
+Piece::Piece(bool isWhite)
 {
     m_white=isWhite;
-    m_dead=dead;
 }
 
-bool Pieces::getPieceWhite()
+bool Piece::hasDead()
 {
-    return m_white;
+    return isDead;
 }
-
-
 

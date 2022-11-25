@@ -8,22 +8,22 @@
 
 
 
-class Bishop : public Pieces{
+class Bishop : public Piece{
     private:
-        bool m_dead = false;
+        bool isDead = false;
 
-        char m_peca = 'B';
+        char m_piece = 'B';
     public:
 
-    Bishop(bool Iswhite,bool dead);
+    Bishop(bool Iswhite);
 
-    char getPeca();
+    char getPiece();
 
-    void moves() override;
+    void move() override;
 
-    bool getDead() override;
+    bool hasDead() override;
 
-    void starting_pos() override;
+    void startingPos() override;
 
 };
 
