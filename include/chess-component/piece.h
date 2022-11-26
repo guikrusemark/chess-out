@@ -2,24 +2,30 @@
 #define _PIECE_H_
 
 #include <string>
-#include <vector>
+
+enum class PieceType {
+    PAWN,
+    KNIGHT,
+    BISHOP,
+    ROOK,
+    QUEEN,
+    KING
+};
 
 class Piece {
-    private:
-        const std::string m_name;
-        const std::string m_symbol;
-        const std::string m_color;
+    protected:
+        PieceType m_type{PieceType::PAWN};
+        char m_symbol{'P'};
+        std::string m_name{"Pawn"};
+        
+        bool m_white{false};
+        uint8_t m_limitOnBoard{8};
 
     public:
-        Piece();
-        ~Piece();
+        Piece(bool white);
 
-        virtual void setName(const std::string &name) = 0;
-        std::string getName();
-
+        bool isWhite();
         virtual void move(uint8_t side) = 0;
-        virtual void capture() = 0;
-        virtual std::vector<std::string *> getMoves() = 0;
 };
 
 #endif // _PIECE_H_

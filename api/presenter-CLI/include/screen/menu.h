@@ -2,18 +2,20 @@
 #define _MENU_H_
 
 #include <string>
-#include <vector>
+#include <list>
 
 namespace cli {
 
     class Menu {
         private:
-            std::string m_title;
-            std::vector<std::string> m_options;
+        
+        std::string playerName;
+        std::list<std::string> menuItems;
 
         public:
-            Menu();
-            ~Menu();
+
+        static void printItems();
+        static void refresh();
     };
 }; // namespace cli
 
