@@ -14,7 +14,7 @@ enum class PieceType {
 
 class Piece {
     protected:
-        PieceType m_type{PieceType::PAWN};
+        PieceType m_type;
         char m_symbol{'P'};
         std::string m_name{"Pawn"};
         

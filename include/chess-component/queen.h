@@ -4,13 +4,6 @@
 #include "chess-component/piece.h"
 
 class Queen final : public Piece {
-    private:
-        m_type = PieceType::QUEEN;
-        m_symbol = 'Q';
-        m_name = "Queen";
-
-        m_limitOnBoard = 9;
-
     public:
         Queen(bool white);
 
