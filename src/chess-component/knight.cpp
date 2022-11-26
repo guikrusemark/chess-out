@@ -1,6 +1,8 @@
 #include "include/chess-component/knight.h"
 
-Knight::Knight(bool isWhite): Piece(isWhite){}
+Knight::Knight(bool isWhite): Piece(isWhite){
+    m_white=isWhite;
+}
 
 
 char Knight::getPiece()

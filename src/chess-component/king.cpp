@@ -2,7 +2,7 @@
 
 King::King(bool check,bool isWhite) : 
     Piece(isWhite){
-    
+    m_white=isWhite;
     m_check=check;
 }
 

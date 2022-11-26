@@ -1,7 +1,9 @@
 #include "include/chess-component/rook.h"
 
 
-Rook::Rook(bool isWhite): Piece(isWhite){}
+Rook::Rook(bool isWhite): Piece(isWhite){
+    m_white=isWhite;
+}
 
 
 char Rook::getPiece()

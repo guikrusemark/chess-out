@@ -1,6 +1,8 @@
 #include "include/chess-component/queen.h"
 
-Queen::Queen(bool isWhite): Piece(isWhite){}
+Queen::Queen(bool isWhite): Piece(isWhite){
+    m_white=isWhite;
+}
 
 void Queen::move()
 {

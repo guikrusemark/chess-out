@@ -1,6 +1,9 @@
 #include "include/chess-component/bishop.h"
 
-Bishop::Bishop(bool white): Piece(white){}
+Bishop::Bishop(bool isWhite): Piece(isWhite)
+{
+    m_white=isWhite;
+}
 
 void Bishop::move()
 {
