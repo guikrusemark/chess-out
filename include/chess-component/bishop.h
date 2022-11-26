@@ -7,7 +7,7 @@ class Bishop final : public Piece {
     public:
         Bishop(bool white);
 
-        void move(uint8_t side) override;
+        void move(int side) override;
 };
 
 #endif // _BISHOP_H_

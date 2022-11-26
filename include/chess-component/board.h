@@ -4,11 +4,18 @@
 #include <map>
 
 #include "chess-component/piece.h"
+#include "chess-component/pawn.h"
+#include "chess-component/knight.h"
+#include "chess-component/bishop.h"
+#include "chess-component/rook.h"
+#include "chess-component/queen.h"
+#include "chess-component/king.h"
+
+#include "chess-component/cell.h"
 
 class Board {
 private:
-    Piece *mp_cells[8][8];
-    std::map<std::string, Piece *> mp_pieces;
+    Cell *mp_cells[8][8];
 
 public:
     Board();

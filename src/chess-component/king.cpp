@@ -7,3 +7,7 @@ King::King(bool white) : Piece(white) {
 
     m_limitOnBoard = 1;
 };
+
+void King::move(int side) {
+    
+}

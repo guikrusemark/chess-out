@@ -7,7 +7,7 @@ class Pawn final : public Piece {
     public:
         Pawn(bool white);
 
-        void move(uint8_t side) override;
+        void move(int side) override;
 };
 
 #endif // _PAWN_H_

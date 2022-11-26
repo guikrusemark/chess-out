@@ -7,7 +7,7 @@ class Queen final : public Piece {
     public:
         Queen(bool white);
 
-        void move(uint8_t side) override;
+        void move(int side) override;
 };
 
 #endif // _QUEEN_H_

@@ -7,7 +7,7 @@ class Rook final : public Piece {
     public:
         Rook(bool white);
 
-        void move(uint8_t side) override;
+        void move(int side) override;
 };
 
 #endif // _ROOK_H_

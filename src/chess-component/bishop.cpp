@@ -7,3 +7,7 @@ Bishop::Bishop(bool white) : Piece(white) {
 
     m_limitOnBoard = 9;
 };
+
+void Bishop::move(int side) {
+    
+};

@@ -7,3 +7,7 @@ Knight::Knight(bool white) : Piece(white) {
 
     m_limitOnBoard = 9;
 };
+
+void Knight::move(int side) {
+       
+};

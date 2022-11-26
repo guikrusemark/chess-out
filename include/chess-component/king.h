@@ -7,7 +7,7 @@ class King final : public Piece {
     public:
         King(bool white);
 
-        void move(uint8_t side) override;
+        void move(int side) override;
 };
 
 #endif // _KING_H_

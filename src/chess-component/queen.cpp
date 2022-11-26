@@ -7,3 +7,7 @@ Queen::Queen(bool white) : Piece(white) {
 
     m_limitOnBoard = 9;
 };
+
+void Queen::move(int side) {
+    
+};
