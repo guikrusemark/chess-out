@@ -20,8 +20,14 @@ bool Pawn::hasDead()
 }
 
 
+bool Pawn::getWhite()
+{
+    return m_white;
+}
 
+/**
 void Pawn::startingPos()
 {
 
 }
+**/

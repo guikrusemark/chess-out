@@ -4,10 +4,11 @@ Bishop::Bishop(bool white): Piece(white){}
 
 void Bishop::move()
 {
-
+    
 }
 
-char Bishop::getPiece(){
+char Bishop::getPiece()
+{
     return m_piece;
 }
 
@@ -17,11 +18,18 @@ bool Bishop::hasDead()
 }
 
 
+bool Bishop::getWhite()
+{
+    return m_white;
+}
 
 
+
+/**
 void Bishop::startingPos()
 {
 
 }
+**/
 
 

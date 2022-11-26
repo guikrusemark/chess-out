@@ -10,3 +10,8 @@ bool Piece::hasDead()
     return isDead;
 }
 
+
+bool Piece::getWhite()
+{
+    return m_white;
+}

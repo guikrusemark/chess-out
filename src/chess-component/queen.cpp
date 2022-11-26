@@ -18,7 +18,15 @@ bool Queen::hasDead()
     return isDead;
 }
 
+bool Queen::getWhite()
+{
+    return m_white;
+}
+
+
+/**
 void Queen::startingPos()
 {
 
 }
+**/

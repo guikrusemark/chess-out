@@ -19,6 +19,11 @@ bool King::getCheck()
     }
 }
 
+bool King::getWhite()
+{
+    return m_white;
+}
+
 void King::move()
 {
     
@@ -29,10 +34,10 @@ bool King::hasDead()
     return isDead;
 }
 
-
+/**
 void King::startingPos()
 {
     
 }
-
+**/
 

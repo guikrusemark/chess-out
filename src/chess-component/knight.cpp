@@ -3,7 +3,8 @@
 Knight::Knight(bool isWhite): Piece(isWhite){}
 
 
-char Knight::getPiece(){
+char Knight::getPiece()
+{
     return m_piece;
 }
 
@@ -12,12 +13,20 @@ void Knight::move()
 
 }
 
+bool Knight::getWhite()
+{
+    return m_white;
+}
+
 bool Knight::hasDead()
 {
-    return m_dead;
+    return isDead;
 }
 
-void starting_pos()
+
+/**
+void Knight::starting_pos()
 {
 
 }
+**/
