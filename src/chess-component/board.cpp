@@ -29,7 +29,7 @@ Board::Board() {
                 mp_cells[row][col] = new Cell(row, col, false, new Pawn(true));
             }
             // ******************************************************************
-            if (row == 0) {
+            if (row == 7) {
                 if (col == 0 || col == 7) {
                     mp_cells[row][col] = new Cell(row, col, false, new Rook(true));
                 } else if (col == 1 || col == 6) {
