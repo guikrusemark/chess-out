@@ -1,5 +1,5 @@
-#ifndef _CELL_H_
-#define _CELL_H_
+#ifndef CHESSCOMPONENT_CELL_H_
+#define CHESSCOMPONENT_CELL_H_
 
 #include "chess-component/piece.h"
 
@@ -19,10 +19,13 @@ class Cell {
         unsigned int getRow();
         unsigned int getColumn();
         char *getPositionNotation();
+        
+        void setEmpty();
         bool isEmpty();
+
         Piece *getPiece();
         void setPiece(Piece *piece);
 
 };
 
-#endif // _CELL_H_
+#endif // CHESSCOMPONENT_CELL_H_

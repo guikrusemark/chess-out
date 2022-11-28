@@ -1,5 +1,5 @@
-#ifndef _KING_H_
-#define _KING_H_
+#ifndef CHESSCOMPONENT_KING_H_
+#define CHESSCOMPONENT_KING_H_
 
 #include "chess-component/piece.h"
 
@@ -10,4 +10,4 @@ class King final : public Piece {
         void move(int side) override;
 };
 
-#endif // _KING_H_
+#endif // CHESSCOMPONENT_KING_H_

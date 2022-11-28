@@ -12,7 +12,7 @@ Cell::Cell(unsigned int row, unsigned int column, bool empty, Piece *piece)
 }
 Cell::~Cell() {
     if (!m_empty) {
-        mp_piece = nullptr;
+        delete mp_piece;
     }
 }
 
@@ -24,6 +24,13 @@ unsigned int Cell::getColumn() {
 }
 char *Cell::getPositionNotation() {
     return m_positionNotation;
+}
+void Cell::setEmpty() {
+    if(!m_empty) {
+        delete mp_piece;
+        mp_piece = nullptr;
+        m_empty = true;
+    };
 }
 bool Cell::isEmpty() {
     return m_empty;

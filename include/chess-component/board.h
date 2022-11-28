@@ -1,7 +1,6 @@
-#ifndef _BOARD_H_
-#define _BOARD_H_
+#ifndef CHESSCOMPONENT_BOARD_H_
+#define CHESSCOMPONENT_BOARD_H_
 
-#include <map>
 
 #include "chess-component/piece.h"
 #include "chess-component/pawn.h"
@@ -14,12 +13,14 @@
 #include "chess-component/cell.h"
 
 class Board {
-private:
-    Cell *mp_cells[8][8];
+    private:
+        Cell *mp_cells[8][8];
 
-public:
-    Board();
-    ~Board();
+    public:
+        Board();
+        ~Board();
+
+        Cell *onCell(unsigned int row, unsigned int col);
 };
 
-#endif // _BOARD_H_
+#endif // CHESSCOMPONENT_BOARD_H_

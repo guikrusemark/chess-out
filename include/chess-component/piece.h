@@ -1,5 +1,5 @@
-#ifndef _PIECE_H_
-#define _PIECE_H_
+#ifndef CHESSCOMPONENT_PIECE_H_
+#define CHESSCOMPONENT_PIECE_H_
 
 #include <string>
 
@@ -23,9 +23,13 @@ class Piece {
 
     public:
         Piece(bool white);
+        virtual ~Piece();
+
+        std::string getName();
+        std::string getColorName();
 
         bool isWhite();
         virtual void move(int side) = 0;
 };
 
-#endif // _PIECE_H_
+#endif // CHESSCOMPONENT_PIECE_H_

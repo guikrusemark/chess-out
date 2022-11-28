@@ -1,5 +1,5 @@
-#ifndef _BISHOP_H_
-#define _BISHOP_H_
+#ifndef CHESSCOMPONENT_BISHOP_H_
+#define CHESSCOMPONENT_BISHOP_H_
 
 #include "chess-component/piece.h"
 
@@ -10,4 +10,4 @@ class Bishop final : public Piece {
         void move(int side) override;
 };
 
-#endif // _BISHOP_H_
+#endif // CHESSCOMPONENT_BISHOP_H_

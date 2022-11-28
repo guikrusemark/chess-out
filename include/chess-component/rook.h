@@ -1,5 +1,5 @@
-#ifndef _ROOK_H_
-#define _ROOK_H_
+#ifndef CHESSCOMPONENT_ROOK_H_
+#define CHESSCOMPONENT_ROOK_H_
 
 #include "chess-component/piece.h"
 
@@ -10,4 +10,4 @@ class Rook final : public Piece {
         void move(int side) override;
 };
 
-#endif // _ROOK_H_
+#endif // CHESSCOMPONENT_ROOK_H_
