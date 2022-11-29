@@ -19,10 +19,11 @@ class Piece {
         std::string m_name{"Pawn"};
         
         bool m_white{false};
+        int m_boardPosition[2]{0, 0};
         int m_limitOnBoard{8};
 
     public:
-        Piece(bool white);
+        Piece(bool white, int row, int column);
         virtual ~Piece();
 
         std::string getName();

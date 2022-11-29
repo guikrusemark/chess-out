@@ -1,6 +1,6 @@
 #include "chess-component/knight.h"
 
-Knight::Knight(bool white) : Piece(white) {
+Knight::Knight(bool white, int row, int column) : Piece(white, row, column) {
     m_type = PieceType::KNIGHT;
     m_symbol = 'N';
     m_name = "Knight";

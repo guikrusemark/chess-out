@@ -13,11 +13,11 @@ int main() {
         for (unsigned int col = 0; col < 8; col++) {
             if (board.onCell(row, col)->isEmpty()) {
                 std::cout << row + 1 << "-" << col + 1 << " "
-                          << "Empty   ";
+                          << "Empty          ";
             } else {
                 std::cout << row + 1 << "-" << col + 1 << " "
-                          << board.onCell(row, col)->getPiece()->getName() << "-"
-                          << board.onCell(row, col)->getPiece()->getColorName() << "    ";
+                          << board.onCell(row, col)->getPiece()->getColorName() << "-"
+                          << board.onCell(row, col)->getPiece()->getName() << "    ";
             }
         }
         std::cout << std::endl;

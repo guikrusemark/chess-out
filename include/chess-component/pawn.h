@@ -5,7 +5,7 @@
 
 class Pawn final : public Piece {
     public:
-        Pawn(bool white);
+        Pawn(bool white, int row, int column);
         ~Pawn();
 
         void move(int side) override;

@@ -5,7 +5,7 @@
 
 class Bishop final : public Piece {
     public:
-        Bishop(bool white);
+        Bishop(bool white, int row, int column);
 
         void move(int side) override;
 };

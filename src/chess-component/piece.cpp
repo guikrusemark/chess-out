@@ -1,6 +1,6 @@
 #include "chess-component/piece.h"
 
-Piece::Piece(bool white) : m_white(white) {}
+Piece::Piece(bool white, int row, int column) : m_white(white), m_boardPosition{row, column} {}
 Piece::~Piece() {}
 
 bool Piece::isWhite() {

@@ -1,6 +1,6 @@
 #include "chess-component/bishop.h"
 
-Bishop::Bishop(bool white) : Piece(white) {
+Bishop::Bishop(bool white, int row, int column) : Piece(white, row, column) {
     m_type = PieceType::BISHOP;
     m_symbol = 'B';
     m_name = "Bishop";

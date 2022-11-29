@@ -5,7 +5,7 @@
 
 class King final : public Piece {
     public:
-        King(bool white);
+        King(bool white, int row, int column);
 
         void move(int side) override;
 };

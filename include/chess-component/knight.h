@@ -5,7 +5,7 @@
 
 class Knight final : public Piece {
     public:
-        Knight(bool white);
+        Knight(bool white, int row, int column);
 
         void move(int side) override;
 };

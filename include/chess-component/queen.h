@@ -5,7 +5,7 @@
 
 class Queen final : public Piece {
     public:
-        Queen(bool white);
+        Queen(bool white, int row, int column);
 
         void move(int side) override;
 };
