@@ -45,15 +45,18 @@ Board::Board() {
         }
     }
 };
-
 Board::~Board() {
     for (unsigned int row = 0; row < 8; row++) {
         for (unsigned int col = 0; col < 8; col++) {
+            if (!this->onCell(row, col).isEmpty()) {
+                delete &(this->onCell(row, col).getPiece());
+            }
             delete mp_cells[row][col];
         }
     }
+};
+
+Cell &Board::onCell(unsigned int row, unsigned int col) {
+    return *(mp_cells[row][col]);
 }
 
-Cell *Board::onCell(unsigned int row, unsigned int col) {
-    return mp_cells[row][col];
-}

@@ -20,7 +20,7 @@ class Board {
         Board();
         ~Board();
 
-        Cell *onCell(unsigned int row, unsigned int col);
+        Cell &onCell(unsigned int row, unsigned int col);
 };
 
 #endif // CHESSCOMPONENT_BOARD_H_

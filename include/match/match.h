@@ -1,17 +1,18 @@
-#ifndef _MATCH_H_
-#define _MATCH_H_
+#ifndef MATCH_MATCH_H_
+#define MATCH_MATCH_H_
 
-#include "game.h"
+#include "chess-component/board.h"
+#include "match/player.h"
 
-class Match : public Game {
-private:
-    unsigned int time;
-    Player &playerWhite;
-    Player &playerBlack;
-    
-public:
-    Match();
-    ~Match();
+class Match {
+    private:
+        int id;
+        Player *players[2];
+        Board *board;
+        
+    public:
+        Match();
+        ~Match();
 };
 
-#endif // _MATCH_H_
+#endif // MATCH_MATCH_H_

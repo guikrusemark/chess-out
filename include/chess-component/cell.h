@@ -14,16 +14,17 @@ class Cell {
     public:
         Cell(unsigned int row, unsigned int column, bool empty);
         Cell(unsigned int row, unsigned int column, bool empty, Piece *piece);
-        ~Cell();
 
         unsigned int getRow();
         unsigned int getColumn();
-        char *getPositionNotation();
-        
+        std::string getPositionNotation();
+        std::string getRowNotation();
+        std::string getColumnNotation();
+
         void setEmpty();
         bool isEmpty();
 
-        Piece *getPiece();
+        Piece &getPiece();
         void setPiece(Piece *piece);
 
 };
