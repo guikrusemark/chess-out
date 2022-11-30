@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall  -rdynamic CMakeFiles/SfmlStarter.dir/src/asset_manager.cpp.o CMakeFiles/SfmlStarter.dir/src/game.cpp.o CMakeFiles/SfmlStarter.dir/src/game_state.cpp.o CMakeFiles/SfmlStarter.dir/src/main.cpp.o CMakeFiles/SfmlStarter.dir/src/pause_state.cpp.o CMakeFiles/SfmlStarter.dir/src/state_machine.cpp.o  -o SfmlStarter  -lsfml-graphics -lsfml-window -lsfml-system 

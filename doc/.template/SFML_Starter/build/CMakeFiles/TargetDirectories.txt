@@ -1,0 +1,3 @@
+/mnt/c/workspace/ufmg/PDS2-2022-2/SFML_Starter/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/workspace/ufmg/PDS2-2022-2/SFML_Starter/build/CMakeFiles/edit_cache.dir
+/mnt/c/workspace/ufmg/PDS2-2022-2/SFML_Starter/build/CMakeFiles/SfmlStarter.dir
