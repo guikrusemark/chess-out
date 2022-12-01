@@ -1,3 +1,10 @@
+/**
+ * @file queen.h
+ * @author
+ * @brief QUEEN type class.
+ *
+ */
+
 #ifndef CHESSCOMPONENT_QUEEN_H_
 #define CHESSCOMPONENT_QUEEN_H_
 

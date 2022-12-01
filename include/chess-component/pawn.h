@@ -1,3 +1,10 @@
+/**
+ * @file pawn.h
+ * @author
+ * @brief PAWN type class.
+ *
+ */
+
 #ifndef CHESSCOMPONENT_PAWN_H_
 #define CHESSCOMPONENT_PAWN_H_
 

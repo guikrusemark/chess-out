@@ -1,3 +1,10 @@
+/**
+ * @file user.h
+ * @author 
+ * @brief Class User is a superset o player which will ideally be used to handle only real players
+ * 
+ */
+
 #ifndef USER_USER_H_
 #define USER_USER_H_
 
@@ -5,18 +12,16 @@
 
 class User {
     private:
-        int id; // unique 0-255 value
-        std::string m_name; // unique name of user
-        int cartel[3]{0, 0, 0}; // 0: Wins, 1: Draws, 2: losts
+        static int m_id; // unique value
+        std::string m_name{"anon"}; // unique one word name
+        int m_cartel[3]{0, 0, 0}; // 0: Wins, 1: Draws, 2: losts
 
     public:
-        User(int id);
-        User(std::string name);
+        User(int id, std::string name);
+        User(int id, std::string name, int cartel[3]);
 
         int getId();
         std::string getName();
-
-        void addUser(std::string name);
 };
 
 #endif // USER_USER_H_

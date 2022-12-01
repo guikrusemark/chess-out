@@ -1,3 +1,10 @@
+/**
+ * @file king.h
+ * @author
+ * @brief KING type class.
+ *
+ */
+
 #ifndef CHESSCOMPONENT_KING_H_
 #define CHESSCOMPONENT_KING_H_
 

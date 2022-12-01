@@ -1,3 +1,10 @@
+/**
+ * @file rook.h
+ * @author
+ * @brief ROOK type class.
+ *
+ */
+
 #ifndef CHESSCOMPONENT_ROOK_H_
 #define CHESSCOMPONENT_ROOK_H_
 

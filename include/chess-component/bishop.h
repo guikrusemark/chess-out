@@ -1,3 +1,10 @@
+/**
+ * @file bishop.h
+ * @author
+ * @brief BISHOP type class.
+ *
+ */
+
 #ifndef CHESSCOMPONENT_BISHOP_H_
 #define CHESSCOMPONENT_BISHOP_H_
 

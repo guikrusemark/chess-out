@@ -1,3 +1,10 @@
+/**
+ * @file knight.h
+ * @author
+ * @brief KNIGHT type class.
+ *
+ */
+
 #ifndef CHESSCOMPONENT_KGNIGHT_H_
 #define CHESSCOMPONENT_KGNIGHT_H_
 
