@@ -12,16 +12,20 @@
 
 class User {
     private:
-        static int m_id; // unique value
+        int m_id{0}; // unique value
         std::string m_name{"anon"}; // unique one word name
         int m_cartel[3]{0, 0, 0}; // 0: Wins, 1: Draws, 2: losts
+        int m_abandoments{0}; // number of times the user abandoment a match
 
     public:
-        User(int id, std::string name);
-        User(int id, std::string name, int cartel[3]);
+        User(); // Anon player
+        User(User &user); // Copy constructor
+        User(int id, std::string name); // constructor will search firstly for an existing user with same unique infos, if not found, will create a new one
 
-        int getId();
-        std::string getName();
+        const int getId();
+        const std::string getName();
+        int& getCartel();
+        const int getAbandoments();
 };
 
 #endif // USER_USER_H_

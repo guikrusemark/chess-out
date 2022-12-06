@@ -5,9 +5,10 @@
  * 
  */
 
-#ifndef TESTS_CHESSCOMPONENT_PIECE_H_
-#define TESTS_CHESSCOMPONENT_PIECE_H_
+#ifndef DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 
+#include "third_party/doctest/include/doctest.h"
 #include "chess-component/piece.h"
 
-#endif // TESTS_CHESSCOMPONENT_PIECE_H_
+#endif // DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN

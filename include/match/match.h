@@ -17,22 +17,18 @@ enum class MatchType {
     SINGLEPLAYER,
     MULTIPLAYER
 };
-enum class MatchMode {
-    CLASSIC,
-    RAPID,
-    BLITZ
-};
 
 class Match {
     private:
-        int id;
+        int m_id{0}; // unique value
         Player *mp_whitePlayer;
         Player *mp_blackPlayer;
         Board *mp_board;
-        
+        bool m_whiteTurn{true};
+
     public:
         Match();
-        ~Match();
+        Match(int id);
 
         void start();
         void end();

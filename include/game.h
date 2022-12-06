@@ -12,25 +12,33 @@
 #include "user/user.h"
 #include "match/match.h"
 
-enum class GameStatus {
-    WAITING,
-    PLAYING,
-    FINISHED
+enum class UI {
+    CLI,
+    SFML
 };
 
 class Game {
     private:
+        /**
+         * @brief pointer of type User to the current player
+         * 
+         */
         User *mp_currentUser;
-        bool m_on{false};
+        /**
+         * @brief pointer of type Match to the current match
+         * 
+         */
+        Match *mp_currentMatch;
 
     public:
         Game();
         ~Game();
-        void run();
-        bool isOn();
+        void run(UI ui = UI::CLI);
 
         void newMatch();
-        void conitnueMatch();
+
+        User &currentUser();
+        Match &currentMatch();
 
 };
 

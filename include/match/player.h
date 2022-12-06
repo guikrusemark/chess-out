@@ -14,9 +14,13 @@ class Player : public User {
     private:
 
         bool m_white{false};
+        bool m_inCheck{false};
 
     public:
-        Player(bool white);
+        Player(User &user, bool white);
+
+        bool isWhite();
+        bool isInCheck();
 
 };
 
