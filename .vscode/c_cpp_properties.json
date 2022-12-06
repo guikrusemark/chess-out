@@ -5,6 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/include",
                 "${workspaceFolder}/include/**",
+                "${workspaceFolder}/third_party/api/DAO/include",
+                "${workspaceFolder}/third_party/doctest/include",
                 "${workspaceFolder}"
             ],
             "defines": [],

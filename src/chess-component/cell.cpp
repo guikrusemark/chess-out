@@ -1,12 +1,13 @@
 #include "chess-component/cell.h"
 
-Cell::Cell(unsigned int row, unsigned int column, bool empty)
-    : m_row(row), m_column(column), m_empty(empty) {
+Cell::Cell(unsigned int row, unsigned int column)
+    : m_row(row), m_column(column) {
     m_positionNotation[0] = 'a' + m_column;
     m_positionNotation[1] = '8' - m_row;
 }
-Cell::Cell(unsigned int row, unsigned int column, bool empty, Piece *piece) 
-    : m_row(row), m_column(column), m_empty(empty), mp_piece(piece) {
+Cell::Cell(unsigned int row, unsigned int column, Piece *piece) 
+    : m_row(row), m_column(column), mp_piece(piece) {
+    m_empty = false;
     m_positionNotation[0] = 'a' + m_column;
     m_positionNotation[1] = '8' - m_row;
 }

@@ -6,6 +6,6 @@ Rook::Rook(bool white, int row, int column) : Piece(white, row, column) {
     m_name = "Rook";
 };
 
-void Rook::move(int side) {
-    
+void Rook::move(int row, int column){
+
 };

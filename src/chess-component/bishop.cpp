@@ -8,6 +8,6 @@ Bishop::Bishop(bool white, int row, int column) : Piece(white, row, column) {
     m_limitOnBoard = 9;
 };
 
-void Bishop::move(int side) {
-    
+void Bishop::move(int row, int column){
+
 };

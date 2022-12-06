@@ -1,6 +1,14 @@
+/**
+ * @file board.h
+ * @author 
+ * @brief Board class, it is where the cells (Cell class) are located and responsible for positioning only.
+ * 
+ */
+
 #ifndef CHESSCOMPONENT_BOARD_H_
 #define CHESSCOMPONENT_BOARD_H_
 
+#include <iostream>
 
 #include "chess-component/piece.h"
 #include "chess-component/pawn.h"

@@ -8,6 +8,6 @@ Queen::Queen(bool white, int row, int column) : Piece(white, row, column) {
     m_limitOnBoard = 9;
 };
 
-void Queen::move(int side) {
-    
+void Queen::move(int row, int column){
+
 };

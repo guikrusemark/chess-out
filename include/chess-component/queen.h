@@ -1,3 +1,10 @@
+/**
+ * @file queen.h
+ * @author
+ * @brief QUEEN type class.
+ *
+ */
+
 #ifndef CHESSCOMPONENT_QUEEN_H_
 #define CHESSCOMPONENT_QUEEN_H_
 
@@ -7,7 +14,7 @@ class Queen final : public Piece {
     public:
         Queen(bool white, int row, int column);
 
-        void move(int side) override;
+        void move(int row, int column) override;
 };
 
 #endif // CHESSCOMPONENT_QUEEN_H_
