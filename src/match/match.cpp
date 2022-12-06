@@ -16,6 +16,6 @@ Player &Match::WhitePlayer() { return *mp_whitePlayer; };
 Player &Match::BlackPlayer() { return *mp_blackPlayer; };
 
 bool Match::isWhiteTurn() { return m_whiteTurn; };
-void Match::move() {
+void Match::move(int rowFrom, int colFrom, int rowTo, int colTo) {
     // TODO
 };

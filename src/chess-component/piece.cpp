@@ -14,3 +14,7 @@ std::string Piece::getName() {
 std::string Piece::getColorName() {
     return m_white ? "White" : "Black";
 }
+
+bool Piece::isPossibleMovingTo(int row, int column) {
+    return m_possibleMovesMatrix[row][column];
+}

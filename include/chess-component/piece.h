@@ -34,6 +34,16 @@ class Piece {
         
         bool m_white{false};
         int m_boardPosition[2]{0, 0};
+        bool m_possibleMovesMatrix[8][8]{
+            {0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0}
+        };
         int m_limitOnBoard{8};
 
     public:
@@ -73,7 +83,9 @@ class Piece {
          * @brief Does the movement selected by the player.
          * 
          */
-        virtual void move(int side) = 0;
+        bool isPossibleMovingTo(int row, int column);
+
+        virtual void move(int row, int column) = 0;
 };
 
 #endif // CHESSCOMPONENT_PIECE_H_

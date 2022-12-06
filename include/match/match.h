@@ -30,7 +30,7 @@ class Match {
         Player &BlackPlayer();
 
         bool isWhiteTurn();
-        void move();
+        void move(int rowFrom, int colFrom, int rowTo, int colTo);
 };
 
 #endif // MATCH_MATCH_H_

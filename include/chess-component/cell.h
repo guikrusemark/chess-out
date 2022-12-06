@@ -26,8 +26,8 @@ class Cell {
          * @param column Column position on board
          * @param empty If the cell is empty or not
          */
-        Cell(unsigned int row, unsigned int column, bool empty); // TODO - param empty will be deprecated for best readability purpose.
-        Cell(unsigned int row, unsigned int column, bool empty, Piece *piece); // TODO - param empty will be deprecated bc passing piece is enough to empty being false.
+        Cell(unsigned int row, unsigned int column); // TODO - param empty will be deprecated for best readability purpose.
+        Cell(unsigned int row, unsigned int column, Piece *piece); // TODO - param empty will be deprecated bc passing piece is enough to empty being false.
 
         /**
          * @brief Get the Row position on board.

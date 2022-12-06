@@ -16,7 +16,6 @@ class User {
         int m_id{0}; // unique value
         std::string m_name{"anon"}; // unique one word name
         int m_cartel[3]{0, 0, 0}; // 0: Wins, 1: Draws, 2: losts
-        int m_abandonmentCount{0};  // number of times the user abandonment a match
 
     public:
         User(); // Anon random player
@@ -25,8 +24,9 @@ class User {
 
         const int getId();
         const std::string getName();
-        int& getCartel();
-        const int getAbandonmentCount();
+        int getWinCount();
+        int getDrawCount();
+        int getLostCount();
 };
 
 #endif // USER_USER_H_

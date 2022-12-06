@@ -15,7 +15,7 @@ class Pawn final : public Piece {
         Pawn(bool white, int row, int column);
         ~Pawn();
 
-        void move(int side) override;
+        void move(int row, int column) override;
 };
 
 #endif // CHESSCOMPONENT_PAWN_H_
