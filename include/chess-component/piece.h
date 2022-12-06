@@ -15,6 +15,7 @@
 #ifndef CHESSCOMPONENT_PIECE_H_
 #define CHESSCOMPONENT_PIECE_H_
 
+#include <stdexcept>
 #include <string>
 
 enum class PieceType {
@@ -45,6 +46,9 @@ class Piece {
             {0, 0, 0, 0, 0, 0, 0, 0}
         };
         int m_limitOnBoard{8};
+
+        void clearPossibleMovesMatrix();
+        virtual void setPossibleMovesMatrix(int row, int column) = 0;
 
     public:
         /**

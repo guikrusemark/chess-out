@@ -11,6 +11,9 @@
 #include "chess-component/piece.h"
 
 class Queen final : public Piece {
+    private:
+        void setPossibleMovesMatrix(int row, int column) override;
+
     public:
         Queen(bool white, int row, int column);
 

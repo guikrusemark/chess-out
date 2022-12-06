@@ -17,5 +17,8 @@ Player &Match::BlackPlayer() { return *mp_blackPlayer; };
 
 bool Match::isWhiteTurn() { return m_whiteTurn; };
 void Match::move(int rowFrom, int colFrom, int rowTo, int colTo) {
-    // TODO
+    if (mp_board->onCell(rowFrom, colFrom).getPiece().isPossibleMovingTo(rowTo, colTo)) {
+        mp_board->onCell(rowFrom, colFrom).getPiece().move(rowTo, colTo);
+        m_whiteTurn = !m_whiteTurn;
+    }
 };

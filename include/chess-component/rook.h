@@ -11,6 +11,9 @@
 #include "chess-component/piece.h"
 
 class Rook final : public Piece {
+    private:
+        void setPossibleMovesMatrix(int row, int column) override;
+
     public:
         Rook(bool white, int row, int column);
 
