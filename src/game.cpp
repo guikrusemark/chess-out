@@ -10,18 +10,14 @@ Game::~Game() {
 };
 
 void Game::run(UI ui) {
-    if (ui == UI::CLI) {
-        std::cout << "Welcome to Chess++!" << std::endl;
-        std::cout << "Please enter your name: ";
-        std::string name;
-        std::cin >> name;
-        std::cout << "Hello " << this->currentUser().getName() << "!" << std::endl;
-    }
+};
+
+void Game::accessUser(std::string name) {
+    mp_currentUser = new User(1, name);
 };
 
 void Game::newMatch() {
-    mp_currentMatch = new Match();
-    this->currentMatch().start();
+    mp_currentMatch = new Match(*mp_currentUser);
 };
 
 User &Game::currentUser() {

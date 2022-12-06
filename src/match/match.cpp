@@ -1,11 +1,21 @@
 #include "match/match.h"
 
-Match::Match() {};
-Match::Match(int id) : m_id(id) {};
+Match::Match(User &whitePlayer) {
+    mp_board = new Board();
+    mp_whitePlayer = new Player(whitePlayer, true);
+    mp_blackPlayer = new Player();
+};
+Match::Match(User &whitePlayer, User &blackPlayer) {
+    mp_board = new Board();
+    mp_whitePlayer = new Player(whitePlayer, true);
+    mp_blackPlayer = new Player(blackPlayer, false);
+};
 
-void Match::start() {};
-void Match::end() {};
-
-Board &Match::Board() { return *mp_board; };
+Board &Match::PlayingBoard() { return *mp_board; };
 Player &Match::WhitePlayer() { return *mp_whitePlayer; };
 Player &Match::BlackPlayer() { return *mp_blackPlayer; };
+
+bool Match::isWhiteTurn() { return m_whiteTurn; };
+void Match::move() {
+    // TODO
+};

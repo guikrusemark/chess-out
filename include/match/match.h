@@ -9,33 +9,28 @@
 #ifndef MATCH_MATCH_H_
 #define MATCH_MATCH_H_
 
+
 #include "chess-component/board.h"
 #include "match/player.h"
-
-// TODECIDE - enum classes must be within or whithout the class?
-enum class MatchType {
-    SINGLEPLAYER,
-    MULTIPLAYER
-};
 
 class Match {
     private:
         int m_id{0}; // unique value
-        Player *mp_whitePlayer;
-        Player *mp_blackPlayer;
-        Board *mp_board;
+        Board *mp_board{nullptr};
+        Player *mp_whitePlayer{nullptr};
+        Player *mp_blackPlayer{nullptr};
         bool m_whiteTurn{true};
 
     public:
-        Match();
-        Match(int id);
+        Match(User &whitePlayer);
+        Match(User &whitePlayer, User &blackPlayer);
 
-        void start();
-        void end();
-
-        Board &Board();
+        Board &PlayingBoard();
         Player &WhitePlayer();
         Player &BlackPlayer();
+
+        bool isWhiteTurn();
+        void move();
 };
 
 #endif // MATCH_MATCH_H_

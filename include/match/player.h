@@ -17,6 +17,7 @@ class Player : public User {
         bool m_inCheck{false};
 
     public:
+        Player();
         Player(User &user, bool white);
 
         bool isWhite();

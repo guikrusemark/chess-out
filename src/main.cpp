@@ -1,6 +1,5 @@
 #include <iostream>
 
-#include "chess-component/board.h"
 #include "game.h"
 
 int main() {
@@ -30,6 +29,8 @@ int main() {
     // std::cout << std::endl;
 
     Game game = Game();
+
+    game.accessUser("Hikaru Nakamura");
 
     return 0;
 }

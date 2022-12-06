@@ -9,6 +9,8 @@
 #ifndef GAME_H_
 #define GAME_H_
 
+#include <string>
+
 #include "user/user.h"
 #include "match/match.h"
 
@@ -35,6 +37,7 @@ class Game {
         ~Game();
         void run(UI ui = UI::CLI);
 
+        void accessUser(std::string name);
         void newMatch();
 
         User &currentUser();
