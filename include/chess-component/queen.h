@@ -14,7 +14,7 @@ class Queen final : public Piece {
     public:
         Queen(bool white, int row, int column);
 
-        void move(int side) override;
+        void move(int row, int column) override;
 };
 
 #endif // CHESSCOMPONENT_QUEEN_H_

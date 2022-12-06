@@ -14,7 +14,7 @@ class Knight final : public Piece {
     public:
         Knight(bool white, int row, int column);
 
-        void move(int side) override;
+        void move(int row, int column) override;
 };
 
 #endif // CHESSCOMPONENT_KGNIGHT_H_

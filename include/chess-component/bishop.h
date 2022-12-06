@@ -14,7 +14,7 @@ class Bishop final : public Piece {
     public:
         Bishop(bool white, int row, int column);
 
-        void move(int side) override;
+        void move(int row, int column) override;
 };
 
 #endif // CHESSCOMPONENT_BISHOP_H_

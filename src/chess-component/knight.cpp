@@ -8,6 +8,6 @@ Knight::Knight(bool white, int row, int column) : Piece(white, row, column) {
     m_limitOnBoard = 9;
 };
 
-void Knight::move(int side) {
-       
+void Knight::move(int row, int column){
+
 };

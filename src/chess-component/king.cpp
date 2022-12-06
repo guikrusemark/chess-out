@@ -8,6 +8,5 @@ King::King(bool white, int row, int column) : Piece(white, row, column) {
     m_limitOnBoard = 1;
 };
 
-void King::move(int side) {
-    
+void King::move(int row, int column) {
 }

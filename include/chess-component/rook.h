@@ -14,7 +14,7 @@ class Rook final : public Piece {
     public:
         Rook(bool white, int row, int column);
 
-        void move(int side) override;
+        void move(int row, int column) override;
 };
 
 #endif // CHESSCOMPONENT_ROOK_H_
