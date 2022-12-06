@@ -25,12 +25,20 @@ int main() {
     //     std::cout << std::endl;
     // }
 
-    // std::cout << std::endl;
-    // std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
 
     Game game = Game();
 
     game.accessUser("Hikaru Nakamura");
+    game.newMatch();
+
+    std::cout << game.currentMatch().WhitePlayer().getName() << std::endl;
+    std::cout << game.currentMatch().BlackPlayer().getName() << std::endl;
+    std::cout << game.currentMatch().PlayingBoard().onCell(1, 4).getPiece().getName() << std::endl;
+
+    std::cout << std::endl;
+    std::cout << std::endl;
 
     return 0;
 }
