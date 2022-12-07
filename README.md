@@ -170,3 +170,22 @@ e quando precisamos do atributo usamos os meotodos get ou quando precisamos atri
 - Alteramos algumas classses e ideias comparados ao nosso diagrama de classe antigo 
 
 ![Diagrama de classes (1)](https://user-images.githubusercontent.com/96149492/206064281-b48d3c18-196a-4e16-a830-4e3d425163d9.png)
+
+
+
+
+### Tratamentos de exceção 
+
+- Fizemos alguns tratamentos de exceções e combrimos a area do tabuleiro
+
+![image](https://user-images.githubusercontent.com/96149492/206316785-0a1f3eb8-43e2-4c5a-8b97-6f2a80487298.png)
+
+- Fizemos nossa classe para tratamento de exceções
+
+
+![image](https://user-images.githubusercontent.com/96149492/206317175-66ab5ab6-553f-4f8f-97a5-3da04d24a2b4.png)
+
+- E acabamos lançando nosso erro caso ocorra bad aloc e alguns outros erros
+
+![image](https://user-images.githubusercontent.com/96149492/206317592-e95d2731-cc7b-4c04-89e1-b37a96c2b5ae.png)
+
