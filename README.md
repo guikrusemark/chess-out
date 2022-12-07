@@ -5,9 +5,6 @@
 ### Integrantes
 - [Guilherme Krusemark](https://github.com/guikrusemark)
 - [Lucas Augusto](https://github.com/minipatch)
-- 
-- 
-- 
 
 ### Descrição do Projeto
 
