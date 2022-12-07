@@ -1,9 +1,10 @@
 /**
  * @file game.h
- * @author 
- * @brief Class Game will be the main class of whole game, controlling states, flows of game and what user can do.
- *     This class will be called in main.cpp and bind along third_party tools.
- * 
+ * @author
+ * @brief Class Game will be the main class of whole game,
+ *      controlling states, flows of game and what user can do.
+ *      This class will be called in main.cpp and bind along third_party tools.
+ *
  */
 
 #ifndef GAME_H_
@@ -13,11 +14,7 @@
 
 #include "user/user.h"
 #include "match/match.h"
-
-enum class UI {
-    CLI,
-    SFML
-};
+#include "presenter/cli/game-presenter.h" // adds graphical interface
 
 class Game {
     private:
@@ -31,18 +28,50 @@ class Game {
          * 
          */
         Match *mp_currentMatch;
+        GamePresenter m_ui = GamePresenter();
 
     public:
-        Game();
         ~Game();
-        void run(UI ui = UI::CLI);
 
+        /**
+         * @brief Start the game interface chosen in include (TO BE RESOLVED)
+         * 
+         */
+        void run();
+        /**
+         * @brief Access or create the user with the given name
+         * 
+         * @param name Name of the user the will be displayed in the game
+         *
+         */
         void accessUser(std::string name);
+        /**
+         * @brief Create a new match with the current user
+         * 
+         */
         void newMatch();
 
+        /**
+         * @brief Get the current user got in accessUser()
+         * 
+         * @return User& the actual object of the current user
+         *
+         */
         User &currentUser();
+        /**
+         * @brief Get the current match got in newMatch()
+         * 
+         * @return Match& the actual object of the current match
+         *
+         */
         Match &currentMatch();
-
+        /**
+         * @brief Get the current user interface
+         *
+         * @return GamePresenter& the actual object of
+         *      the current user interface
+         */
+        GamePresenter &ui();
 };
 
 #endif // GAME_H_

@@ -1,8 +1,8 @@
 /**
  * @file player.h
- * @author 
- * @brief Class Player is a specification of User, which can be either bot or real player to play a match
- * 
+ * @author
+ * @brief Class Player is a specification of User,
+ *      which can be either bot or real player to play a match
  */
 
 #ifndef MATCH_PLAYER_H_
