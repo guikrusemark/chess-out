@@ -160,7 +160,7 @@ e quando precisamos do atributo usamos os meotodos get ou quando precisamos atri
 
 ### Passos para compilação
 
-- Para compilar o projeto basta digitar make que vai compilar  e executar o projeto
+- Para compilar o projeto basta digitar "make all" que vai compilar  e executar o projeto
 
 
 
