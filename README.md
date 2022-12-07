@@ -5,7 +5,7 @@
 ### Integrantes
 - [Guilherme Krusemark](https://github.com/guikrusemark)
 - [Lucas Augusto](https://github.com/minipatch)
-
+![video](https://user-images.githubusercontent.com/6116219/206320837-9ba6e051-3b2f-48ba-9cff-7f97ddcffc88.mp4)
 ### Descrição do Projeto
 
 - A ideia inicial do nosso projeto era fazer um xadrez com interface grafica 
