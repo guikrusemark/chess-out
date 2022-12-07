@@ -176,7 +176,7 @@ e quando precisamos do atributo usamos os meotodos get ou quando precisamos atri
 
 ### Tratamentos de exceção 
 
-- Fizemos alguns tratamentos de exceções e combrimos a area do tabuleiro
+- Fizemos alguns tratamentos de exceções e combrimos a area do tabuleiro e tratar erros exclusivamente  do jogo 
 
 ![image](https://user-images.githubusercontent.com/96149492/206316785-0a1f3eb8-43e2-4c5a-8b97-6f2a80487298.png)
 
