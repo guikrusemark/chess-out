@@ -17,6 +17,7 @@ class Cell {
         char m_positionNotation[2];
         bool m_empty{true};
         Piece *mp_piece{nullptr};
+        bool m_colorWhite{true};
 
     public:
         /**
@@ -85,7 +86,7 @@ class Cell {
          *
          */
         void setPiece(Piece *piece);
-
+        bool isWhite();
 };
 
 #endif // CHESSCOMPONENT_CELL_H_

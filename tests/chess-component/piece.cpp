@@ -8,7 +8,15 @@
 #ifndef DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 
-#include "third_party/doctest/include/doctest.h"
+#include "doctest.h"
 #include "chess-component/piece.h"
+#include "chess-component/pawn.h"
+
+TEST_CASE("Test if piece is created correctly") {
+    Pawn pawn = Pawn(true, 2, 2);
+
+    CHECK(pawn.getColorName() == "White");
+    CHECK(pawn.getName() == "Pawn");
+}
 
 #endif // DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN

@@ -9,7 +9,6 @@
 #define USER_USER_H_
 
 #include <string>
-#include <cmath>
 
 class User {
     private:

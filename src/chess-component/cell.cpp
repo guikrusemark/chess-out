@@ -4,12 +4,20 @@ Cell::Cell(unsigned int row, unsigned int column)
     : m_row(row), m_column(column) {
     m_positionNotation[0] = 'a' + m_column;
     m_positionNotation[1] = '8' - m_row;
+    if ((m_row + m_column) % 2 == 0) // if cell on place even
+        m_colorWhite = true;
+    else
+        m_colorWhite = false;
 }
 Cell::Cell(unsigned int row, unsigned int column, Piece *piece) 
     : m_row(row), m_column(column), mp_piece(piece) {
     m_empty = false;
     m_positionNotation[0] = 'a' + m_column;
     m_positionNotation[1] = '8' - m_row;
+    if ((m_row + m_column) % 2 == 0) // if cell on place even
+        m_colorWhite = true;
+    else
+        m_colorWhite = false;
 }
 
 unsigned int Cell::getRow() {
@@ -50,4 +58,7 @@ Piece &Cell::getPiece() {
 }
 void Cell::setPiece(Piece *piece) {
     mp_piece = piece;
+}
+bool Cell::isWhite() {
+    return m_colorWhite;
 }

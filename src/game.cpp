@@ -1,7 +1,5 @@
 #include "game.h"
 
-Game::Game() {};
-
 Game::~Game() {
     if(!(mp_currentUser == nullptr))
         delete mp_currentUser;
@@ -9,7 +7,8 @@ Game::~Game() {
         delete mp_currentMatch;
 };
 
-void Game::run(UI ui) {
+void Game::run() {
+    m_ui.start();
 };
 
 void Game::accessUser(std::string name) {
@@ -18,6 +17,7 @@ void Game::accessUser(std::string name) {
 
 void Game::newMatch() {
     mp_currentMatch = new Match(*mp_currentUser);
+    m_ui.drawMatch(*mp_currentMatch);
 };
 
 User &Game::currentUser() {
@@ -25,4 +25,7 @@ User &Game::currentUser() {
 };
 Match &Game::currentMatch() {
     return *mp_currentMatch;
+};
+GamePresenter &Game::ui() {
+    return m_ui;
 };
