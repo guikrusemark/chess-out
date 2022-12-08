@@ -23,13 +23,14 @@ chess.out:
 ######################################################################################################################
 
 test-board:
-	clear
 	${CC} ${CXXFLAGS} ${INCLUDETEST} ${SRCTEST} ./tests/chess-component/board.cpp -o ${TARGETTEST}
 	./${TARGETTEST}
 test-piece:
-	clear
-	g++ -std=c++11 -g -Wall -I ./include -I ./third_party/doctest/include ./src/chess-component/*.cpp ./src/match/*.cpp ./src/user/*.cpp ./src/game.cpp ./tests/chess-component/piece.cpp -o test.out
-	./test.out
+	${CC} ${CXXFLAGS} ${INCLUDETEST} ${SRCTEST} ./tests/chess-component/piece.cpp -o ${TARGETTEST}
+	./${TARGETTEST}
+test-match:
+	${CC} ${CXXFLAGS} ${INCLUDETEST} ${SRCTEST} ./tests/match/match.cpp -o ${TARGETTEST}
+	./${TARGETTEST}
 
 	
 run:

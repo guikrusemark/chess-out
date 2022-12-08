@@ -5,6 +5,8 @@ Game::~Game() {
         delete mp_currentUser;
     if(!(mp_currentMatch == nullptr))
         delete mp_currentMatch;
+    if(!(&m_ui == nullptr))
+        throw "GamePresenter is leaking";
 };
 
 void Game::run() {

@@ -1,5 +1,5 @@
 /**
- * @file board.h
+ * @file board.cpp
  * @author
  * @brief Will test the unit board.h and subclasses to ensure good working of the chess components.
  *
@@ -11,12 +11,17 @@
 #include "chess-component/board.h"
 #include "doctest.h"
 
-TEST_CASE("Test if board is created correctly") {
+TEST_CASE("Test board") {
     Board board = Board();
 
-    CHECK(board.onCell(0, 0).getPiece().getColorName() == "Black");
+    CHECK(board.onCell(0, 0).getColumn() == 0);
+}
+TEST_CASE("Test cell") {
+    Board board = Board();
+
     CHECK(board.onCell(0, 0).isEmpty() == false);
     CHECK(board.onCell(0, 0).getPositionNotation() == "a8");
+    CHECK(board.onCell(0, 0).isWhite() == true);
 }
 
 #endif // DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN

@@ -1,0 +1,23 @@
+digraph "third_party/libs/sfml-windows/include/SFML/Network/TcpSocket.hpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="third_party/libs/sfml\l-windows/include/SFML\l/Network/TcpSocket.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="third_party/libs/sfml\l-linux/include/SFML/Network\l/Ftp.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sfml-linux_2include_2SFML_2Network_2Ftp_8hpp.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="third_party/libs/sfml\l-linux/include/SFML/Network\l/Http.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sfml-linux_2include_2SFML_2Network_2Http_8hpp.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="third_party/libs/sfml\l-linux/include/SFML/Network.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sfml-linux_2include_2SFML_2Network_8hpp.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="third_party/libs/sfml\l-windows/include/SFML\l/Network/Ftp.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sfml-windows_2include_2SFML_2Network_2Ftp_8hpp.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="third_party/libs/sfml\l-windows/include/SFML\l/Network.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sfml-windows_2include_2SFML_2Network_8hpp.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="third_party/libs/sfml\l-windows/include/SFML\l/Network/Http.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sfml-windows_2include_2SFML_2Network_2Http_8hpp.html",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

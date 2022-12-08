@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['c_3100',['C',['../classsf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a28228963e96f640dc325e475415d4e1f',1,'sf::Keyboard']]],
+  ['close_3101',['Close',['../group__window.html#gga914bd84282f5c6e63def78efbca24b85a76bbd82b28e359cc0feec9e5ec123b40',1,'sf::Style']]],
+  ['closed_3102',['Closed',['../classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa4f718a7f43b0f2d46be222fe23198d9e',1,'sf::Event']]],
+  ['closingconnection_3103',['ClosingConnection',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3bae070a7c775b991e22bbc94164c06a3e1',1,'sf::Ftp::Response']]],
+  ['closingdataconnection_3104',['ClosingDataConnection',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3ba326e2020413f73ab20d96e1425dc6c61',1,'sf::Ftp::Response']]],
+  ['comma_3105',['Comma',['../classsf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a9dd5eb9a5c45ca7cc3d4abd0d371128d',1,'sf::Keyboard']]],
+  ['commandnotimplemented_3106',['CommandNotImplemented',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3bac91eba896240e927206c386f5bf8e32e',1,'sf::Ftp::Response']]],
+  ['commandunknown_3107',['CommandUnknown',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3ba4ccd31337b9478c6cf5089523e16b540',1,'sf::Ftp::Response']]],
+  ['connectionclosed_3108',['ConnectionClosed',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3baf84c1847c12fe7216eca9a49af1b0cd7',1,'sf::Ftp::Response']]],
+  ['connectionfailed_3109',['ConnectionFailed',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3ba099e88e94cf51258fd901177a37f7bb7',1,'sf::Ftp::Response::ConnectionFailed()'],['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ad75dc598ea9e428ca9222de7e8a429dc',1,'sf::Http::Response::ConnectionFailed()']]],
+  ['core_3110',['Core',['../structsf_1_1ContextSettings.html#af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4',1,'sf::ContextSettings']]],
+  ['couldhavefailedanddid_3111',['CouldHaveFailedAndDid',['../namespacedoctest_1_1TestCaseFailureReason.html#aecb2ca1f80416d60f0d6b96f65859d3caa038bc08a903185cf809dd05056d6a75',1,'doctest::TestCaseFailureReason']]],
+  ['count_3112',['Count',['../classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aae5c49a2d50ccccd9c941e6be36b0d05f',1,'sf::Event::Count()'],['../classsf_1_1Joystick.html#abdc405a3ee186ebc2861cbe959890d8fa58bb2e8f3749310d61097e4361bc0ba8',1,'sf::Joystick::Count()'],['../classsf_1_1Sensor.html#a687375af3ab77b818fca73735bcaea84ade647efb34c9d194e432fa0397d3f656',1,'sf::Sensor::Count()']]],
+  ['crash_3113',['Crash',['../namespacedoctest_1_1TestCaseFailureReason.html#aecb2ca1f80416d60f0d6b96f65859d3ca362a350971c370e7bf89f1993aeb2eeb',1,'doctest::TestCaseFailureReason']]],
+  ['created_3114',['Created',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a1459dbf2b1416eafbfeb4403c9f4eef0',1,'sf::Http::Response']]],
+  ['cross_3115',['Cross',['../classsf_1_1Cursor.html#ab9ab152aec1f8a4955e34ccae08f930aab20690d9fff69c0fbfe6b903776c773e',1,'sf::Cursor']]],
+  ['cyan_3116',['Cyan',['../namespacedoctest_1_1Color.html#a32e9eaf6013139846e848af6e6cf2b92aee19aacebbc04b150add359e94684c83',1,'doctest::Color']]]
+];

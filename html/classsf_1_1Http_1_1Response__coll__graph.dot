@@ -1,0 +1,7 @@
+digraph "sf::Http::Response"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{sf::Http::Response\n||+ Response()\l+ getField()\l+ getStatus()\l+ getMajorHttpVersion()\l+ getMinorHttpVersion()\l+ getBody()\l+ Response()\l+ getField()\l+ getStatus()\l+ getMajorHttpVersion()\l+ getMinorHttpVersion()\l+ getBody()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Define a HTTP response."];
+}

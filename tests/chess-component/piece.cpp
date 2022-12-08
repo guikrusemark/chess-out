@@ -1,5 +1,5 @@
 /**
- * @file piece.h
+ * @file piece.cpp
  * @author 
  * @brief Will test the unit piece.h and subclasses to ensure good working of the chess components.
  * 
@@ -17,6 +17,8 @@ TEST_CASE("Test if piece is created correctly") {
 
     CHECK(pawn.getColorName() == "White");
     CHECK(pawn.getName() == "Pawn");
+    CHECK(pawn.getColorLetter() == "W");
+    CHECK(pawn.getNameLetter() == "Pawn ");
 }
 
 #endif // DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN

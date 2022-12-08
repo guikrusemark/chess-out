@@ -1,0 +1,14 @@
+digraph "tests" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_59425e443f801f1f2fd8bbe4959a3ccf {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_59425e443f801f1f2fd8bbe4959a3ccf.html"];
+    dir_59425e443f801f1f2fd8bbe4959a3ccf [shape=plaintext label="tests"];
+    dir_5a5575b32e60ee3e3cfc4f1ab497f904 [shape=box label="chess-component" color="black" fillcolor="white" style="filled" URL="dir_5a5575b32e60ee3e3cfc4f1ab497f904.html"];
+  }
+  dir_44f42edf5dd23d4deca0321224e9ce90 [shape=box label="third_party" fillcolor="white" style="filled" color="red" URL="dir_44f42edf5dd23d4deca0321224e9ce90.html"];
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" fillcolor="white" style="filled" color="red" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_5a5575b32e60ee3e3cfc4f1ab497f904->dir_44f42edf5dd23d4deca0321224e9ce90 [headlabel="2", labeldistance=1.5 headhref="dir_000011_000016.html"];
+  dir_5a5575b32e60ee3e3cfc4f1ab497f904->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="3", labeldistance=1.5 headhref="dir_000011_000001.html"];
+}

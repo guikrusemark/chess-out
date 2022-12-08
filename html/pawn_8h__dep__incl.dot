@@ -1,0 +1,32 @@
+digraph "include/chess-component/pawn.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="include/chess-component\l/pawn.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="PAWN type class."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="include/chess-component\l/board.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$board_8h.html",tooltip="Board class, it is where the cells (Cell class) are located and responsible for positioning only."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="include/match/match.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$match_2match_8h.html",tooltip="Class to handle the match between two players, being two real players or one-two bots This class is t..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="include/game.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$game_8h.html",tooltip="Class Game will be the main class of whole game, controlling states, flows of game and what user can ..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="src/game.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$game_8cpp.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="src/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="include/presenter/cli\l/game-presenter.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$game-presenter_8h.html",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="src/presenter/cli/game\l-presenter.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$game-presenter_8cpp.html",tooltip=" "];
+  Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="src/match/match.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$match_8cpp.html",tooltip=" "];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="src/chess-component\l/board.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$src_2chess-component_2board_8cpp.html",tooltip=" "];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="tests/chess-component\l/board.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_2chess-component_2board_8cpp.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="src/chess-component\l/pawn.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pawn_8cpp.html",tooltip=" "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="tests/chess-component\l/piece.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_2chess-component_2piece_8cpp.html",tooltip=" "];
+}
