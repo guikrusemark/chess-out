@@ -10,9 +10,9 @@
 
 - Estão separados em partes devido à limitação do software de gravação versão teste.
 
-![Video 1](https://drive.google.com/file/d/15eOBOKdpnUr2ix6EkFNL6um7mHy5XAc1/view)
-![Video 2](https://drive.google.com/file/d/12TN1o-ztAIO6kG5C4yYBIgHbiV3ynXIT/view)
-![Video 3](https://drive.google.com/file/d/1ZFAvkP53TaLvfnXQJ2dD9DlwjC4d399S/view)
+[Video 1](https://drive.google.com/file/d/15eOBOKdpnUr2ix6EkFNL6um7mHy5XAc1/view)
+[Video 2](https://drive.google.com/file/d/12TN1o-ztAIO6kG5C4yYBIgHbiV3ynXIT/view)
+[Video 3](https://drive.google.com/file/d/1ZFAvkP53TaLvfnXQJ2dD9DlwjC4d399S/view)
 
 ### Descrição do Projeto
 
