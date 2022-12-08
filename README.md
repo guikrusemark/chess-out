@@ -8,7 +8,11 @@
 
 ### Apresentação em Vídeo
 
-![video](https://user-images.githubusercontent.com/6116219/206320837-9ba6e051-3b2f-48ba-9cff-7f97ddcffc88.mp4)
+- Estão separados em partes devido à limitação do software de gravação versão teste.
+
+![Video 1](https://drive.google.com/file/d/15eOBOKdpnUr2ix6EkFNL6um7mHy5XAc1/view)
+![Video 2](https://drive.google.com/file/d/12TN1o-ztAIO6kG5C4yYBIgHbiV3ynXIT/view)
+![Video 3](https://drive.google.com/file/d/1ZFAvkP53TaLvfnXQJ2dD9DlwjC4d399S/view)
 
 ### Descrição do Projeto
 
