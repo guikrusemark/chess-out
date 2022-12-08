@@ -1,0 +1,15 @@
+digraph "sf::Socket"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{sf::Socket\n||+ ~Socket()\l+ setBlocking()\l+ isBlocking()\l+ ~Socket()\l+ setBlocking()\l+ isBlocking()\l# Socket()\l# getHandle()\l# create()\l# create()\l# close()\l# Socket()\l# getHandle()\l# create()\l# create()\l# close()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Base class for all the socket types."];
+  Node2 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{sf::NonCopyable\n||# NonCopyable()\l# ~NonCopyable()\l# NonCopyable()\l# ~NonCopyable()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1NonCopyable.html",tooltip="Utility class that makes any derived class non-copyable."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{sf::TcpListener\n||+ TcpListener()\l+ getLocalPort()\l+ listen()\l+ close()\l+ accept()\l+ TcpListener()\l+ getLocalPort()\l+ listen()\l+ close()\l+ accept()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1TcpListener.html",tooltip="Socket that listens to new TCP connections."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{sf::TcpSocket\n||+ TcpSocket()\l+ getLocalPort()\l+ getRemoteAddress()\l+ getRemotePort()\l+ connect()\l+ disconnect()\l+ send()\l+ send()\l+ receive()\l+ send()\l+ receive()\l+ TcpSocket()\l+ getLocalPort()\l+ getRemoteAddress()\l+ getRemotePort()\l+ connect()\l+ disconnect()\l+ send()\l+ send()\l+ receive()\l+ send()\l+ receive()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1TcpSocket.html",tooltip="Specialized socket using the TCP protocol."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{sf::UdpSocket\n||+ UdpSocket()\l+ getLocalPort()\l+ bind()\l+ unbind()\l+ send()\l+ receive()\l+ send()\l+ receive()\l+ UdpSocket()\l+ getLocalPort()\l+ bind()\l+ unbind()\l+ send()\l+ receive()\l+ send()\l+ receive()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1UdpSocket.html",tooltip="Specialized socket using the UDP protocol."];
+}

@@ -1,0 +1,13 @@
+digraph "priv::ThreadFunctorWithArg&lt; F, A &gt;"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{priv::ThreadFunctorWithArg\l\< F, A \>\n||+ ThreadFunctorWithArg()\l+ run()\l+ ThreadFunctorWithArg()\l+ run()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{priv::ThreadFunc\n||+ ~ThreadFunc()\l+ run()\l+ ~ThreadFunc()\l+ run()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structpriv_1_1ThreadFunc.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +m_function" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{F\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +m_arg" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{A\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}
