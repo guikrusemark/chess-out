@@ -107,12 +107,14 @@ algumas informações sobre a notação das peças, notação do tabuleiro e mai
 inspiração da logica do jogo para esse projeto.
 
 
-- Clasificamos as peças como Peão como P, Rei como K, Rainha como Q ,Bispo como B, Cavalo como N,Torre como R. As peças brancas
+- Clasificamos as peças como Peão como Pawn, Rei como King, Rainha como Queen ,Bispo como Bisharp, Cavalo como Knight,Torre como Rook. As peças brancas
 são representadas com as letras W na frente enquanto as peças pretas são representadas
 pela letra B antes das letras que representam as peças.
 
+- Nesse exemplo mostramos a peça rook com B na frente de black
 
-// foto das peças 
+-![image](https://user-images.githubusercontent.com/96149492/206338914-b2ac0f27-d0d5-49da-bd04-32aece057f31.png)
+
 
 
 
@@ -120,7 +122,10 @@ pela letra B antes das letras que representam as peças.
 por exemplo a posição inicial do cavalo da cor branca é B1 enquanto a posição inicial do cavalo preto é B8, posições que não tem alguma peça, 
 classificamos como empty.
 
-// foto da funcionalidade do tabuleiro
+- Aqui temos detalhes de cada cedula do jogo .
+
+![image](https://user-images.githubusercontent.com/96149492/206339097-b09ff23f-5097-4fa8-87ff-4188f64944b8.png)
+
 
 
 ### Alguns detalhes sobre o jogo
@@ -128,9 +133,7 @@ classificamos como empty.
 - Pensamos em fazer algumas coisas bem simples como menu para acessar o jogo, também pensamos em implementar um historico para salvar algumas informações 
 das partidas, por exemplo quantas peças foram perdidas.
 
-
-//foto do historico e menu para acessar o jogo
-
+- Infelizmente não tivemos tempo mas conseguimos fazer um mini-menu para colocar nome e coisas.
 
 ### Falando um pouco das classes e orientação a objeto
 
