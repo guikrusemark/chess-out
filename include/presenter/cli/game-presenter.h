@@ -15,11 +15,12 @@ class GamePresenter {
          * 
          */
         void clear();
+        void drawCell(Match &match, unsigned int row, unsigned int column, unsigned int rl);
         /**
          * @brief Draw board within current match
          *
          */
-        void drawBoard();
+        void drawBoard(Match &match);
 
     public:
         /**

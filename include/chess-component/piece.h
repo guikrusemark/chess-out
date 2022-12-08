@@ -71,18 +71,32 @@ class Piece {
 
         /**
          * @brief Get the name of the Piece Type.
-         * 
+         *
          * @return PieceType string.
          */
         std::string getName();
         /**
-         * @brief Get a string version of color name (white, black). 
+         * @brief Get the first letter of the name of the Piece Type.
+         *
+         * @return PieceType string.
+         */
+        std::string getNameLetter();
+        /**
+         * @brief Get a string version of color name (white, black).
          *      To be easier to show on presenter.
-         * 
+         *
          * @return std::string the name of color
          *
          */
         std::string getColorName();
+        /**
+         * @brief Get a string version of color name (white, black).
+         *      To be easier to show on presenter.
+         *
+         * @return std::string the name of color
+         *
+         */
+        std::string getColorLetter();
 
         /**
          * @brief Get is the piece is white or not.

@@ -17,8 +17,16 @@ std::string Piece::getName() {
     return m_name;
 }
 
+std::string Piece::getNameLetter() {
+    return (m_name.substr(0, 4) + " ");
+}
+
 std::string Piece::getColorName() {
-    return m_white ? "White" : "Black";
+    return (m_white ? "White" : "Black");
+}
+
+std::string Piece::getColorLetter() {
+    return (m_white ? "W" : "B");
 }
 
 bool Piece::isPossibleMovingTo(int row, int column) {

@@ -3,9 +3,9 @@
 int main() {
     Game game = Game();
 
-    game.run();
-    game.accessUser(game.ui().askName());
-    game.newMatch();
+    game.run(); // Start the game
+    game.accessUser(game.ui().askName()); // Ask for the user's name
+    game.newMatch(); // Start a new match
 
     return 0;
 }
