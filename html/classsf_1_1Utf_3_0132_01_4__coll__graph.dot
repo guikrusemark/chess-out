@@ -1,7 +1,0 @@
-digraph "sf::Utf&lt; 32 &gt;"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{sf::Utf\< 32 \>\n||+ decode()\l+ encode()\l+ next()\l+ count()\l+ fromAnsi()\l+ fromWide()\l+ fromLatin1()\l+ toAnsi()\l+ toWide()\l+ toLatin1()\l+ toUtf8()\l+ toUtf16()\l+ toUtf32()\l+ decodeAnsi()\l+ decodeWide()\l+ encodeAnsi()\l+ encodeWide()\l+ decode()\l+ encode()\l+ next()\l+ count()\l+ fromAnsi()\l+ fromWide()\l+ fromLatin1()\l+ toAnsi()\l+ toWide()\l+ toLatin1()\l+ toUtf8()\l+ toUtf16()\l+ toUtf32()\l+ decodeAnsi()\l+ decodeWide()\l+ encodeAnsi()\l+ encodeWide()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Specialization of the Utf template for UTF-32."];
-}

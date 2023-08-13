@@ -1,7 +1,0 @@
-digraph "sf::Font"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{sf::Font\n||+ Font()\l+ Font()\l+ ~Font()\l+ loadFromFile()\l+ loadFromMemory()\l+ loadFromStream()\l+ getInfo()\l+ getGlyph()\l+ getKerning()\l+ getLineSpacing()\l+ getUnderlinePosition()\l+ getUnderlineThickness()\l+ getTexture()\l+ operator=()\l+ Font()\l+ Font()\l+ ~Font()\l+ loadFromFile()\l+ loadFromMemory()\l+ loadFromStream()\l+ getInfo()\l+ getGlyph()\l+ getKerning()\l+ getLineSpacing()\l+ getUnderlinePosition()\l+ getUnderlineThickness()\l+ getTexture()\l+ operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Class for loading and manipulating character fonts."];
-}

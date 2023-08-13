@@ -1,7 +1,0 @@
-digraph "sf::Listener"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{sf::Listener\n||+ setGlobalVolume()\l+ getGlobalVolume()\l+ setPosition()\l+ setPosition()\l+ getPosition()\l+ setDirection()\l+ setDirection()\l+ getDirection()\l+ setUpVector()\l+ setUpVector()\l+ getUpVector()\l+ setGlobalVolume()\l+ getGlobalVolume()\l+ setPosition()\l+ setPosition()\l+ getPosition()\l+ setDirection()\l+ setDirection()\l+ getDirection()\l+ setUpVector()\l+ setUpVector()\l+ getUpVector()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The audio listener is the point in the scene from where all the sounds are heard."];
-}

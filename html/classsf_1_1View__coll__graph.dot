@@ -1,7 +1,0 @@
-digraph "sf::View"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{sf::View\n||+ View()\l+ View()\l+ View()\l+ setCenter()\l+ setCenter()\l+ setSize()\l+ setSize()\l+ setRotation()\l+ setViewport()\l+ reset()\l+ getCenter()\l+ getSize()\l+ getRotation()\l+ getViewport()\l+ move()\l+ move()\l+ rotate()\l+ zoom()\l+ getTransform()\l+ getInverseTransform()\l+ View()\l+ View()\l+ View()\l+ setCenter()\l+ setCenter()\l+ setSize()\l+ setSize()\l+ setRotation()\l+ setViewport()\l+ reset()\l+ getCenter()\l+ getSize()\l+ getRotation()\l+ getViewport()\l+ move()\l+ move()\l+ rotate()\l+ zoom()\l+ getTransform()\l+ getInverseTransform()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="2D camera that defines what region is shown on screen"];
-}

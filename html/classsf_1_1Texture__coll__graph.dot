@@ -1,9 +1,0 @@
-digraph "sf::Texture"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{sf::Texture\n||+ Texture()\l+ Texture()\l+ ~Texture()\l+ create()\l+ loadFromFile()\l+ loadFromMemory()\l+ loadFromStream()\l+ loadFromImage()\l+ getSize()\l+ copyToImage()\l+ update()\l+ update()\l+ update()\l+ update()\l+ update()\l+ update()\l+ update()\l+ update()\l+ setSmooth()\l+ isSmooth()\l+ setSrgb()\l+ isSrgb()\l+ setRepeated()\l+ isRepeated()\l+ generateMipmap()\l+ operator=()\l+ swap()\l+ getNativeHandle()\l+ Texture()\l+ Texture()\l+ ~Texture()\l+ create()\l+ loadFromFile()\l+ loadFromMemory()\l+ loadFromStream()\l+ loadFromImage()\l+ getSize()\l+ copyToImage()\l+ update()\l+ update()\l+ update()\l+ update()\l+ update()\l+ update()\l+ update()\l+ update()\l+ setSmooth()\l+ isSmooth()\l+ setSrgb()\l+ isSrgb()\l+ setRepeated()\l+ isRepeated()\l+ generateMipmap()\l+ operator=()\l+ swap()\l+ getNativeHandle()\l+ bind()\l+ getMaximumSize()\l+ bind()\l+ getMaximumSize()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Image living on the graphics card that can be used for drawing."];
-  Node2 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
-  Node2 [label="{sf::GlResource\n||# GlResource()\l# ~GlResource()\l# GlResource()\l# ~GlResource()\l# registerContextDestroyCallback()\l# registerContextDestroyCallback()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1GlResource.html",tooltip="Base class for classes that require an OpenGL context."];
-}
